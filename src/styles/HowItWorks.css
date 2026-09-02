@@ -1,0 +1,158 @@
+.how-it-works {
+  padding: 105px 0;
+
+  background: #E8DFE0;
+}
+
+.how-container {
+  width: min(1180px, calc(100% - 80px));
+
+  margin: auto;
+}
+
+.how-it-works .section-heading {
+  margin-bottom: 65px;
+}
+
+.how-it-works .section-heading h2 {
+  color: #2A2E2B;
+}
+
+.how-it-works .section-heading h2 span {
+  color: #8D9B6A;
+}
+
+.timeline {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 0;
+}
+
+.timeline-item {
+  position: relative;
+
+  text-align: center;
+
+  padding: 0 25px;
+}
+
+.timeline-step {
+  position: relative;
+
+  z-index: 2;
+
+  width: 70px;
+  height: 70px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  border: 6px solid #E8DFE0;
+}
+
+.timeline-step.green {
+  background: #8D9B6A;
+  color: white;
+}
+
+.timeline-step.blue {
+  background: #8A9EA7;
+  color: white;
+}
+
+.timeline-step.peach {
+  background: #DAB692;
+  color: #FFFFFF;
+}
+
+.timeline-step.brown {
+  background: #8F5B34;
+  color: white;
+}
+
+.timeline-line {
+  position: absolute;
+
+  top: 35px;
+
+  left: calc(50% + 35px);
+
+  width: calc(100% - 70px);
+
+  height: 2px;
+
+  background: rgba(141, 155, 106, 0.5);
+
+  border-top: 2px dashed rgba(141, 155, 106, 0.55);
+}
+
+.timeline-item h3 {
+  margin: 24px 0 10px;
+
+  color: #2A2E2B;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+}
+
+.timeline-item p {
+  max-width: 190px;
+
+  margin: auto;
+
+  color: #686F6A;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 55px 20px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .how-it-works {
+    padding: 75px 0;
+  }
+
+  .how-container {
+    width: calc(100% - 35px);
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+}

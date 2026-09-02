@@ -1,0 +1,193 @@
+.footer {
+  padding: 70px 0 25px;
+
+  background: #2A2E2B;
+
+  color: white;
+}
+
+.footer-container {
+  width: min(1180px, calc(100% - 80px));
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.6fr
+    1fr
+    1fr
+    1.2fr
+    1fr;
+
+  gap: 45px;
+}
+
+.footer-brand {
+  max-width: 220px;
+}
+
+.footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
+}
+
+.footer-logo span {
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.footer-brand p {
+  margin-top: 17px;
+
+  color: #BFC5C1;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.footer-column h4 {
+  margin: 0 0 7px;
+
+  color: #DAB692;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+}
+
+.footer-column a {
+  color: #C8CECA;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  transition: 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #8D9B6A;
+
+  transform: translateX(2px);
+}
+
+.footer-social {
+  display: flex;
+
+  gap: 9px;
+}
+
+.footer-social a {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #3A403C;
+
+  color: white !important;
+
+  font-size: 12px;
+
+  transition: 0.25s ease;
+}
+
+.footer-social a:hover {
+  background: #8D9B6A;
+
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  width: min(1180px, calc(100% - 80px));
+
+  margin: 55px auto 0;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #8F9691;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+}
+
+@media (max-width: 850px) {
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .footer {
+    padding-top: 55px;
+  }
+
+  .footer-container {
+    width: calc(100% - 35px);
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px 25px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-bottom {
+    width: calc(100% - 35px);
+  }
+
+}

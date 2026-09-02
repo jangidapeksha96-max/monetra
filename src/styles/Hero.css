@@ -1,0 +1,482 @@
+.hero {
+  min-height: 680px;
+
+  padding: 80px 0 100px;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(218, 182, 146, 0.18),
+      transparent 28%
+    ),
+    #E8DFE0;
+
+  overflow: hidden;
+}
+
+.hero-container {
+  width: min(1180px, calc(100% - 80px));
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(420px, 0.9fr);
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 22px;
+
+  color: #8F5B34;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+.hero-eyebrow span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #8D9B6A;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(44px, 5vw, 68px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 700;
+
+  color: #2A2E2B;
+}
+
+.hero h1 span {
+  color: #8D9B6A;
+}
+
+.hero-content > p {
+  max-width: 520px;
+
+  margin: 28px 0 35px;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #59615C;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  border-radius: 11px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #8D9B6A;
+  color: white;
+
+  box-shadow:
+    0 10px 25px rgba(141, 155, 106, 0.28);
+}
+
+.primary-btn:hover {
+  background: #71804F;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  color: #2A2E2B;
+
+  border: 1px solid rgba(42, 46, 43, 0.25);
+
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.secondary-btn:hover {
+  background: white;
+
+  border-color: #8D9B6A;
+
+  color: #71804F;
+
+  transform: translateY(-3px);
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 38px;
+}
+
+.hero-trust p {
+  margin: 0;
+
+  color: #737A75;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+}
+
+.trust-dots {
+  display: flex;
+}
+
+.trust-dots span {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  border: 2px solid #E8DFE0;
+
+  margin-left: -5px;
+}
+
+.trust-dots span:first-child {
+  margin-left: 0;
+  background: #8D9B6A;
+}
+
+.trust-dots span:nth-child(2) {
+  background: #8A9EA7;
+}
+
+.trust-dots span:nth-child(3) {
+  background: #DAB692;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 470px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-blue-shape {
+  position: absolute;
+
+  width: 330px;
+  height: 390px;
+
+  right: 50px;
+
+  top: 20px;
+
+  border-radius: 4px;
+
+  background: #8A9EA7;
+
+  opacity: 0.95;
+}
+
+.hero-peach-shape {
+  position: absolute;
+
+  width: 170px;
+  height: 180px;
+
+  right: -15px;
+  bottom: 40px;
+
+  border-radius: 4px;
+
+  background: #DAB692;
+
+  opacity: 0.9;
+}
+
+.hero-dots {
+  position: absolute;
+
+  right: 0;
+  top: 55px;
+
+  color: #8D9B6A;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  letter-spacing: 7px;
+
+  opacity: 0.8;
+}
+
+.hero-dashboard-card {
+  position: relative;
+
+  z-index: 3;
+
+  width: 330px;
+
+  padding: 27px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid rgba(143, 91, 52, 0.15);
+
+  box-shadow:
+    0 25px 55px rgba(42, 46, 43, 0.16);
+}
+
+.dashboard-card-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  color: #59615C;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.growth {
+  padding: 5px 8px;
+
+  border-radius: 20px;
+
+  background: rgba(141, 155, 106, 0.18);
+
+  color: #71804F;
+}
+
+.hero-dashboard-card h2 {
+  margin: 14px 0 2px;
+
+  color: #2A2E2B;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 34px;
+}
+
+.total-label {
+  margin: 0 0 20px;
+
+  color: #909590;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+}
+
+.hero-subscription {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 14px 0;
+
+  border-top: 1px solid #eee7e5;
+}
+
+.subscription-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  color: #333834;
+}
+
+.subscription-left strong {
+  color: #2A2E2B;
+}
+
+.subscription-icon {
+  width: 31px;
+  height: 31px;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  font-weight: 700;
+
+  font-size: 13px;
+}
+
+.netflix {
+  background: #8F5B34;
+}
+
+.spotify {
+  background: #8D9B6A;
+}
+
+.prime {
+  background: #8A9EA7;
+}
+
+.hero-subscription > strong {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  color: #2A2E2B;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 50px;
+  }
+
+  .hero-content {
+    margin: auto;
+  }
+
+  .hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-trust {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 60px 0 80px;
+  }
+
+  .hero-container {
+    width: calc(100% - 35px);
+  }
+
+  .hero h1 {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-content > p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 400px;
+  }
+
+  .hero-blue-shape {
+    width: 270px;
+    height: 320px;
+
+    right: 25px;
+  }
+
+  .hero-dashboard-card {
+    width: 280px;
+    padding: 22px;
+  }
+
+}

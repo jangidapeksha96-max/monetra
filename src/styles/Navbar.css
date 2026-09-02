@@ -1,0 +1,187 @@
+.monetra-navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(232, 223, 224, 0.94);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(143, 91, 52, 0.12);
+}
+
+.monetra-navbar-inner {
+  width: min(1180px, calc(100% - 80px));
+  min-height: 78px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.monetra-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  text-decoration: none;
+}
+
+.monetra-logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.monetra-logo span {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.7px;
+
+  color: #2A2E2B;
+}
+
+.monetra-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+
+  margin-left: auto;
+}
+
+.monetra-nav-links a {
+  position: relative;
+
+  color: #4f5752;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  padding: 8px 0;
+
+  transition: 0.25s ease;
+}
+
+.monetra-nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #8D9B6A;
+
+  transition: 0.25s ease;
+}
+
+.monetra-nav-links a:hover {
+  color: #8F5B34;
+}
+
+.monetra-nav-links a:hover::after {
+  width: 100%;
+}
+
+.monetra-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 23px;
+
+  border-radius: 11px;
+
+  background: #8D9B6A;
+  color: white;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow:
+    0 8px 20px rgba(141, 155, 106, 0.25);
+
+  transition: 0.25s ease;
+}
+
+.monetra-login-btn:hover {
+  background: #71804F;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(141, 155, 106, 0.3);
+}
+
+@media (max-width: 900px) {
+
+  .monetra-navbar-inner {
+    width: calc(100% - 40px);
+    gap: 22px;
+  }
+
+  .monetra-nav-links {
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .monetra-navbar-inner {
+    width: calc(100% - 30px);
+
+    padding: 16px 0;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .monetra-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .monetra-nav-links {
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px 20px;
+
+    margin: 0;
+  }
+
+  .monetra-nav-links a {
+    font-size: 12px;
+  }
+
+  .monetra-login-btn {
+    padding: 9px 20px;
+  }
+}

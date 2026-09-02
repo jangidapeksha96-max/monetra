@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ================================
+   ROOT
+================================ */
+
+:root {
+  --brown: #8f5b34;
+  --brown-dark: #704524;
+  --beige: #dab692;
+  --sage: #a8a18e;
+  --blue-grey: #8a9ea7;
+
+  --background: #f7f5f2;
+  --white: #ffffff;
+  --text: #2f2a27;
+  --muted: #716a64;
+
+  --border: rgba(143, 91, 52, 0.1);
+  --soft-brown: rgba(143, 91, 52, 0.08);
+
+  --shadow: 0 12px 35px rgba(47, 42, 39, 0.06);
+}
+
+/* ================================
+   PAGE
+================================ */
+
+.settings-page {
+  min-height: 100vh;
+
+  padding: 55px 70px 80px;
+
+  background: linear-gradient(
+    135deg,
+    #f7f5f2,
+    #ece7df
+  );
+
+  color: var(--text);
+
+  font-family: "Poppins", sans-serif;
+}
+
+.settings-page * {
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.settings-header {
+  max-width: 1000px;
+  margin: 0 auto 35px;
+}
+
+.settings-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--brown);
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.settings-header h1 {
+  margin: 0;
+
+  font-size: 40px;
+  line-height: 1.15;
+
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+
+.settings-header p {
+  margin: 10px 0 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ================================
+   CARDS
+================================ */
+
+.settings-card {
+  max-width: 1000px;
+
+  margin: 0 auto 22px;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  border: 1px solid var(--border);
+  border-radius: 24px;
+
+  box-shadow: var(--shadow);
+
+  backdrop-filter: blur(18px);
+}
+
+.settings-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 27px;
+}
+
+.settings-card-heading h2 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  letter-spacing: -0.3px;
+}
+
+.settings-card-heading p {
+  margin: 6px 0 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ================================
+   AVATAR
+================================ */
+
+.settings-avatar {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--soft-brown);
+  color: var(--brown);
+
+  border: 1px solid rgba(143, 91, 52, 0.12);
+
+  border-radius: 16px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ================================
+   FORM GRID
+================================ */
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-field label {
+  color: var(--text);
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.settings-field input,
+.settings-option select {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 14px;
+
+  border: 1px solid rgba(143, 91, 52, 0.13);
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #fbfaf8;
+
+  color: var(--text);
+
+  font-family: inherit;
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.settings-field input::placeholder {
+  color: #aaa29c;
+}
+
+.settings-field input:focus,
+.settings-option select:focus {
+  background: white;
+
+  border-color: rgba(143, 91, 52, 0.35);
+
+  box-shadow:
+    0 0 0 4px rgba(143, 91, 52, 0.06);
+}
+
+.settings-field input:disabled {
+  color: #8d8781;
+  background: #f1efeb;
+  cursor: not-allowed;
+}
+
+.settings-field small {
+  margin-top: -2px;
+
+  color: #98918b;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ================================
+   PREFERENCES
+================================ */
+
+.settings-option {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid rgba(143, 91, 52, 0.07);
+}
+
+.settings-option:first-of-type {
+  padding-top: 0;
+}
+
+.settings-option:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.settings-option > div {
+  min-width: 0;
+}
+
+.settings-option strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: var(--text);
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-option span {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.settings-option select {
+  width: 230px;
+
+  flex-shrink: 0;
+
+  cursor: pointer;
+}
+
+/* ================================
+   TOGGLE
+================================ */
+
+.settings-toggle {
+  width: 48px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  padding: 3px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #d7d2cc;
+
+  cursor: pointer;
+
+  transition: background 0.25s ease;
+}
+
+.settings-toggle span {
+  display: block;
+
+  width: 21px;
+  height: 21px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+
+  transform: translateX(0);
+
+  transition: transform 0.25s ease;
+}
+
+.settings-toggle.active {
+  background: var(--brown);
+}
+
+.settings-toggle.active span {
+  transform: translateX(21px);
+}
+
+/* ================================
+   PASSWORD FORM
+================================ */
+
+.password-form {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.password-form .settings-field {
+  min-width: 0;
+}
+
+.password-form .settings-secondary-btn {
+  grid-column: 1 / -1;
+
+  justify-self: flex-start;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.settings-secondary-btn {
+  padding: 11px 18px;
+
+  border: 1px solid rgba(143, 91, 52, 0.15);
+  border-radius: 11px;
+
+  background: white;
+
+  color: var(--brown);
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.settings-secondary-btn:hover {
+  background: var(--soft-brown);
+
+  border-color: rgba(143, 91, 52, 0.25);
+
+  transform: translateY(-1px);
+}
+
+.settings-secondary-btn:disabled,
+.settings-save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================================
+   SAVE
+================================ */
+
+.settings-save-area {
+  max-width: 1000px;
+
+  margin: 5px auto 25px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settings-save-btn {
+  min-width: 145px;
+
+  padding: 12px 22px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--brown);
+  color: white;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 9px 20px rgba(143, 91, 52, 0.18);
+
+  transition: all 0.25s ease;
+}
+
+.settings-save-btn:hover {
+  background: var(--brown-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 26px rgba(143, 91, 52, 0.22);
+}
+
+/* ================================
+   ACCOUNT / DANGER
+================================ */
+
+.danger-card {
+  border-color: rgba(155, 85, 80, 0.12);
+}
+
+.account-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-settings-btn,
+.delete-account-btn {
+  padding: 10px 17px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.logout-settings-btn {
+  border: 1px solid rgba(143, 91, 52, 0.14);
+
+  background: white;
+
+  color: var(--brown);
+}
+
+.logout-settings-btn:hover {
+  background: var(--soft-brown);
+
+  border-color: rgba(143, 91, 52, 0.25);
+}
+
+.delete-account-btn {
+  border: 1px solid rgba(155, 85, 80, 0.15);
+
+  background: rgba(155, 85, 80, 0.05);
+
+  color: #9b5550;
+}
+
+.delete-account-btn:hover {
+  background: rgba(155, 85, 80, 0.1);
+
+  border-color: rgba(155, 85, 80, 0.25);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .settings-page {
+    padding: 40px 30px 60px;
+  }
+
+  .password-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .password-form .settings-secondary-btn {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .settings-page {
+    padding: 30px 17px 50px;
+  }
+
+  .settings-header {
+    margin-bottom: 25px;
+  }
+
+  .settings-header h1 {
+    font-size: 31px;
+  }
+
+  .settings-card {
+    padding: 22px 19px;
+
+    border-radius: 20px;
+  }
+
+  .settings-card-heading {
+    margin-bottom: 22px;
+  }
+
+  .settings-card-heading h2 {
+    font-size: 18px;
+  }
+
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .settings-option {
+    align-items: flex-start;
+  }
+
+  .settings-option select {
+    width: 150px;
+  }
+
+  .password-form {
+    grid-template-columns: 1fr;
+  }
+
+  .password-form .settings-secondary-btn {
+    grid-column: auto;
+  }
+
+  .settings-save-area {
+    justify-content: stretch;
+  }
+
+  .settings-save-btn {
+    width: 100%;
+  }
+
+  .account-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logout-settings-btn,
+  .delete-account-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .settings-page {
+    padding: 25px 13px 40px;
+  }
+
+  .settings-header h1 {
+    font-size: 28px;
+  }
+
+  .settings-card {
+    padding: 20px 16px;
+  }
+
+  .settings-card-heading {
+    align-items: flex-start;
+  }
+
+  .settings-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 13px;
+  }
+
+  .settings-option {
+    gap: 15px;
+  }
+
+  .settings-option select {
+    width: 130px;
+  }
+
+  .settings-option span {
+    max-width: 210px;
+  }
+}
