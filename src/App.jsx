@@ -8,7 +8,7 @@ import Analytics from "./pages/Analytics";
 import Subscriptions from "./pages/Subscriptions";
 import Settings from "./pages/Settings";
 
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 function App() {
   return (
