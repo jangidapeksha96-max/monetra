@@ -5,7 +5,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 
-import { auth } from "../firebase";
+import { auth } from "../Firebase";
 import "../styles/Login.css";
 
 function Login() {
